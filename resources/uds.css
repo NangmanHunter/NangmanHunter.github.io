@@ -11,11 +11,17 @@
     align-content: start;
 }
 .rf  >li:nth-child(2n), 
-.rf-a>li:nth-child(2n){ list-style-type: '🚀'; }
+.rf-a>li:nth-child(2n){ list-style-type: '🚀 '; }
 
 .rf-a img{
     height: 16px;
     width: auto;
 }
 
-
+.rf-a a{
+    text-decoration: none;
+    color: mediumvioletred;
+}
+.rf-a a:hover{
+    filter: invert(1);
+}
