@@ -20,6 +20,7 @@ details>summary:hover{
 
 
 details .r{ color:crimson; }
+    details .o{ color:orangered; }
 details .b{ color:cornflowerblue }
 details .g{color:mediumseagreen;}
 details  a{color:white; text-decoration: none;}

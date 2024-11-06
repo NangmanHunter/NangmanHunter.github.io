@@ -30,6 +30,7 @@
 
 .previous{
     position: relative;
+    font-weight: normal;
 }
 .previous::before{
     content: '기출';

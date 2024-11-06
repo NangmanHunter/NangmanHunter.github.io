@@ -1,7 +1,8 @@
 $(`head`).append(`<link rel="stylesheet" href="emoji-clipboard.css">`)
 
 $(`.code>li`).click(function(e){
-    const t=$(this).text();
+    const h=$(this).html();
+    const t=h.replace(/<span[\s\S]*span>/,"");
     navigator.clipboard.writeText(t)
     .then(()   => { 
 

@@ -1,3 +1,7 @@
+$(`head`).append(`<link rel="stylesheet" href="민법-resources/btn-box.css">`)
+
+
+
 $(document).on('click', '.horizontal', function() {
         
     $(this).style(`filter: invert(1);`);
@@ -66,4 +70,9 @@ $(document).keyup( function(e){
         : $(`.detail-spread`).click() 
         ;
     }
+})
+
+$(`.list-title`).click(function(){
+    $(this).toggleText(`▶`, `◀`);
+    $(`.ul ul:not(:has(ul))`).toggle();
 })

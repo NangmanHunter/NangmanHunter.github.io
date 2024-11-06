@@ -1,0 +1,6 @@
+.ul-flex,
+.flex-gap
+{
+    display: flex; 
+    column-gap: 40px;
+}
