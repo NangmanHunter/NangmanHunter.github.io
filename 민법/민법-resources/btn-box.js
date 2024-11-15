@@ -1,4 +1,10 @@
 $(`head`).append(`<link rel="stylesheet" href="민법-resources/btn-box.css">`)
+$(`.btn-box`).append(`
+        <button class="btn detail-fold-spread" >●</button>
+        <button class="btn horizontal-vertical">+</button>
+        <button class="btn diagonal-top-bottom">╲</button>
+        <button class="btn expand-shrink">◆</button>
+`)
 
 
 
@@ -58,8 +64,17 @@ $(`.detail`).click(function() { $(this).toggleText(`▲`, `▼`); $(`.detail-div
 
 
 
-$(`.detail-spread`).click(function(){$(`details`).prop(`open`, true);})
-$(`.detail-fold`).click(function(){$(`details`).prop(`open`, false);})
+let count_fs=0;
+$(`.detail-fold-spread`).click(function(){
+    $(this).toggleText(`★`, `●`);
+    count_fs++;
+    count_fs%2==1
+    ? $(`details`).prop(`open`, true) 
+    : ($(`details`).prop(`open`, false) , count_fs=0)
+})
+
+
+
 
 let count=0;
 $(document).keyup( function(e){ 
@@ -75,4 +90,46 @@ $(document).keyup( function(e){
 $(`.list-title`).click(function(){
     $(this).toggleText(`▶`, `◀`);
     $(`.ul ul:not(:has(ul))`).toggle();
+})
+
+
+
+
+
+$(`.horizontal-vertical`).click(function(){
+    $(`.horizontal-toggle`).click();
+    $(`.horizontal-toggle-ul`).click();
+    $(`.horizontal-toggle-parent`).click();
+})
+
+$(`.diagonal-top-bottom`).click(function(){
+    $(`.diagonal-toggle`).click();
+})
+
+$(`.expand-shrink`).click(function(){
+    $(`.expand-toggle`).click();
+})
+
+
+
+$(document).keyup( function(e){ 
+    if(e.ctrlKey && e.altKey && (e.key=='Q' || e.key=='q')){ 
+        count++;
+        count%2==1 
+        ? $(`.detail-fold`).click()
+        : $(`.detail-spread`).click() 
+        ;
+    }
+
+    if(e.ctrlKey && e.altKey && (e.key=='W' || e.key=='w')){ 
+        $(`.horizontal-vertical`).click();
+    }
+
+    if(e.ctrlKey && e.altKey && (e.key=='E' || e.key=='e')){ 
+        $(`.diagonal-top-bottom`).click();
+    }
+
+    if(e.ctrlKey && e.altKey && (e.key=='R' || e.key=='r')){ 
+        $(`.expand-shrink`).click();
+    }
 })

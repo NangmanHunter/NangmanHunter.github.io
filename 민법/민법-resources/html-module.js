@@ -1,0 +1,8 @@
+$(`.html-module`).each(function(){
+    const n=$(this).attr(`class`).replace(`html-module `, "");
+    const t=`.details`;
+    const f = window.location.pathname.split('/').pop();
+    const f_  = decodeURIComponent(f);
+    const f__  = f_.replace(`.html`,"");
+    $(`.${n}`).load(`${f__}-${n}.html ${t}`);
+})

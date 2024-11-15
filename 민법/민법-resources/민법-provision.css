@@ -9,18 +9,21 @@ details .issue-provision{
 }
 
 
-.issue-provision h6{ filter: drop-shadow(0 0 5px white); }
-.issue-provision b { filter: drop-shadow(0 0 10px white); color: red; }
+/* .issue-provision h6{ filter: drop-shadow(0 0 5px white); } */
+/* .issue-provision b { filter: drop-shadow(0 0 10px white); color: red; } */
 
 .issue-provision .r{ color:crimson; }
 .issue-provision .b{ color:cornflowerblue }
 .issue-provision .g{color:mediumseagreen;}
 
+.template,
 .provision-template{
     display: grid; 
     grid-template-columns: auto 1fr; 
     column-gap: 40px;
 }
+.template>ul:nth-child(2n-1),
+.template>div>ul:nth-child(2n-1),
 .provision-template>ul:nth-child(2n-1),
 .provision-template>div>ul:nth-child(2n-1)
 {
@@ -30,6 +33,12 @@ details .issue-provision{
     white-space: nowrap;
 }
 
+
 .provision-template>ul:nth-child(1) b{
     filter: drop-shadow(0 0 0 black);
+}
+
+
+.template ul{
+    flex-wrap: nowrap;
 }

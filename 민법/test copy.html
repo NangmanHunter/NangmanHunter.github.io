@@ -13,18 +13,17 @@
 
 
 
+    
 
 
-    <nav>
+    <!-- <nav>
         <ul>
             <li>▶</li>
             <li>b</li>
         </ul>
 
     </nav>
-
-
-    <div style="width: 1000px; height: 1000px; background-color: black;"></div>
+    <div style="width: 1000px; height: 1000px; background-color: black;"></div> -->
 
 
 
@@ -34,6 +33,15 @@
 
 
 
+    <details>
+        <summary>🔤</summary>
+        aaa
+    </details>
+
+    <details>
+        <summary></summary>
+        aaa
+    </details>
 
 
 
@@ -74,7 +82,17 @@ nav li:hover{
 </style>
 <script>
 
+// $(`details`).prop("open", true);
+$(`details:not(:has(summary:contains('🔤')))`).prop("open", true);
 
+    $(`details:has(summary:contains('🔤'))`).each(function(){
+        console.log(
+            $(this)
+        );
+        console.log(
+            $(this).text()
+        );
+    })
 
 
 </script>

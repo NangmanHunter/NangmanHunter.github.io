@@ -30,3 +30,4 @@
 
 .pointer      {cursor: pointer;}                    /* horizontalㆍvetical */
 .detail-divide{list-style-type: ''; display: none;} /* detail */
+.hor-ul       { display: flex; column-gap: 40px;}
