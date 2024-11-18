@@ -8,6 +8,7 @@ document.querySelector(`head`).insertAdjacentHTML('beforeend', `
     <link rel="stylesheet" href="민법-resources/민법-provision.css">
     <link rel="stylesheet" href="민법-resources/민법-color.css">
     <link rel="stylesheet" href="민법-resources/민법-어휘ㆍ기출.css">
+    <link rel="stylesheet" href="민법-resources/div.css">
 `);
 
 

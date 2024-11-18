@@ -4,5 +4,12 @@ $(`.html-module`).each(function(){
     const f = window.location.pathname.split('/').pop();
     const f_  = decodeURIComponent(f);
     const f__  = f_.replace(`.html`,"");
-    $(`.${n}`).load(`${f__}-${n}.html ${t}`);
+    $(`.${n}`).load(`${f__}-${n}.html ${t}`, function(){
+
+        $(this).children().children(`summary`).text(`${n}`)
+        $(`details`).prop(`open`, true);
+    });
+
+
+
 })

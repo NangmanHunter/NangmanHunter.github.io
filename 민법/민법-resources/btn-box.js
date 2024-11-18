@@ -6,6 +6,16 @@ $(`.btn-box`).append(`
         <button class="btn expand-shrink">◆</button>
 `)
 
+$(document).scroll(function(){
+    if (scrollY > 100) {
+        $(`.btn-box .btn`).addClass(`scroll-low`)
+    } else {
+        $(`.btn-box .btn`).removeClass(`scroll-low`)
+    }
+})
+
+
+
 
 
 $(document).on('click', '.horizontal', function() {
@@ -69,8 +79,8 @@ $(`.detail-fold-spread`).click(function(){
     $(this).toggleText(`★`, `●`);
     count_fs++;
     count_fs%2==1
-    ? $(`details`).prop(`open`, true) 
-    : ($(`details`).prop(`open`, false) , count_fs=0)
+    ? $(`details`).prop(`open`, false) 
+    : ($(`details`).prop(`open`, true) , count_fs=0)
 })
 
 

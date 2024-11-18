@@ -9,6 +9,10 @@ $(document).on(`click`, `.horizontal-toggle-ul`, function(){
     $(this).toggleText(`↕`,`↔`);
     $(this).parent('ul').toggleClass(`ul-flex`);
 })
+$(document).on(`click`, `.hor-toggle-ul`, function(){
+    $(this).toggleText(`↕`,`↔`);
+    $(this).parents('ul').toggleClass(`ul-flex`);
+})
 $(document).on(`click`, `.horizontal-toggle-parent`, function(){
     $(this).toggleText(`↕`,`↔`);
     $(this).parent().toggleClass(`ul-flex`);
