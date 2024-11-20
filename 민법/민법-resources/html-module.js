@@ -8,6 +8,9 @@ $(`.html-module`).each(function(){
 
         $(this).children().children(`summary`).text(`${n}`)
         $(`details`).prop(`open`, true);
+
+        details_fontsize();
+        
     });
 
 

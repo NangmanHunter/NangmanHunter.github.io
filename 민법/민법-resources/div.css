@@ -3,3 +3,9 @@
     margin-right: 40px; 
     vertical-align: top;
 }
+
+.flex-28{
+    display: flex; 
+}
+.flex-28>:nth-child(1){ flex: 0 0 20%;}
+.flex-28>:nth-child(2){ flex: 0 0 80%;}
