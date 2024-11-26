@@ -8,7 +8,12 @@ document.querySelector(`head`).insertAdjacentHTML('beforeend', `
     <link rel="stylesheet" href="민법-resources/민법-provision.css">
     <link rel="stylesheet" href="민법-resources/민법-color.css">
     <link rel="stylesheet" href="민법-resources/민법-어휘ㆍ기출.css">
-    <link rel="stylesheet" href="민법-resources/div.css">
+
+    <link rel="stylesheet" href="민법-resources/pre.css">
+    <link rel="stylesheet" href="민법-resources/summary.css">
+
+
+
 `);
 
 
@@ -25,6 +30,7 @@ const scriptArr=scriptSplice(`
     <script src="../resources/udc.js"></script>
     
     <script src="민법-resources/btn-box.js"></script>
+    <script src="민법-resources/div.js"></script>
     <script src="민법-resources/ul-toggle.js"></script>
     <script src="민법-resources/민법-common.js"></script>
 `);

@@ -86,14 +86,9 @@ $(`.detail-fold-spread`).click(function(){
 
 
 
-let count=0;
 $(document).keyup( function(e){ 
     if(e.ctrlKey && e.shiftKey && (e.key=='F' || e.key=='f')){ 
-        count++;
-        count%2==1 
-        ? $(`.detail-fold`).click()
-        : $(`.detail-spread`).click() 
-        ;
+        $(`.detail-fold-spread`).click()
     }
 })
 
@@ -124,11 +119,7 @@ $(`.expand-shrink`).click(function(){
 
 $(document).keyup( function(e){ 
     if(e.ctrlKey && e.altKey && (e.key=='Q' || e.key=='q')){ 
-        count++;
-        count%2==1 
-        ? $(`.detail-fold`).click()
-        : $(`.detail-spread`).click() 
-        ;
+       $(`.detail-fold-spread`).click()
     }
 
     if(e.ctrlKey && e.altKey && (e.key=='W' || e.key=='w')){ 

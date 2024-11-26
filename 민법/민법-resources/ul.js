@@ -1,4 +1,7 @@
-$(`head`).append(`<link rel="stylesheet" href="민법-resources/ul.css">`);
+$(`head`).append(`
+    <link rel="stylesheet" href="민법-resources/ul.css">
+    <link rel="stylesheet" href="민법-resources/ul-level.css">
+`);
 
 
 $(document).on(`click`, `.horizontal-toggle`, function(){
@@ -85,3 +88,20 @@ $(document).on(`click`, `.disc-toggle`, function(){
     $(this).parents(`.ul-layer-margin`).toggleClass(`disc`);
     $(this).parents(`ul`).find(`.ul-layer-margin`).toggleClass(`disc`);
 })
+
+
+
+function div_level(){
+    $(`.div-level-reverse`).each(function(){
+        $(this).children('ul').eq(0).addClass(`ul-level`);
+        $(this).children('ul').eq(1).addClass(`ul-level-reverse`);
+    })
+
+    $(`.div-level`).each(function(){
+        $(this).children('ul:nth-child(2n-1)').addClass(`ul-level`);
+        $(this).children('ul:nth-child(2n)').addClass(`ul-level-reverse`);
+    })
+}
+div_level();
+
+

@@ -1,5 +1,6 @@
-p,pre{padding:10px;}
-pre {font-family: auto;}
+
+p{padding:10px;}
+
 .a-caselaw{
     text-decoration: none; 
     color: mediumvioletred; 
@@ -7,7 +8,6 @@ pre {font-family: auto;}
     font-weight: bold;
 }
 body{margin: 0;}
-
 
 
 
@@ -71,6 +71,14 @@ body{margin: 0;}
     grid-auto-rows: min-content;
 }
 
-
+.grid-3x3{
+    display: inline-grid; 
+    grid-template-columns: repeat(3, auto);
+    height: min-content;
+}
+.grid-3x3>li:nth-child(3n-1),
+.grid-3x3>li:nth-child(3n){
+    list-style-type: '';
+}
 
 

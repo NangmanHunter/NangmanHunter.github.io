@@ -4,8 +4,20 @@
     vertical-align: top;
 }
 
-.flex-28{
-    display: flex; 
+
+.inline-block{display: inline-block;}
+
+
+
+[class^='div-level']{display: inline-flex;}
+
+
+.div-13{
+    display: inline-flex; 
+    padding: 10px;
 }
-.flex-28>:nth-child(1){ flex: 0 0 20%;}
-.flex-28>:nth-child(2){ flex: 0 0 80%;}
+.div-13>ul{
+    display: inline-grid; 
+    list-style-type: ''; 
+    padding: 0;
+}

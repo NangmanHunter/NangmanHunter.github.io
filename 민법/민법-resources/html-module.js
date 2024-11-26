@@ -6,13 +6,14 @@ $(`.html-module`).each(function(){
     const f__  = f_.replace(`.html`,"");
     $(`.${n}`).load(`${f__}-${n}.html ${t}`, function(){
 
-        $(this).children().children(`summary`).text(`${n}`)
-        $(`details`).prop(`open`, true);
-
+        details_open();
         details_fontsize();
-        
+
+
+        div_level();
     });
 
-
-
 })
+
+
+

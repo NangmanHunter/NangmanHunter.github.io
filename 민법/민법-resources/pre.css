@@ -1,0 +1,10 @@
+
+pre{
+    padding:10px;
+    font-family: auto;
+}
+
+[class^='inline-top']{
+    display: inline-block; 
+    vertical-align: top;
+}

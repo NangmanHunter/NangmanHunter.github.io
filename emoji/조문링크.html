@@ -24,6 +24,19 @@
                     <span>가족관계의등록등에관한법률</span>
                     <span>(가족관계등록법)</span>
                 </li>
+                <li>
+                    <span>공간정보의구축및관리등에관한법률</span>
+                    <span>(공간정보관리법)</span>
+                </li>
+                <li>
+                    <span>공간정보의구축및관리등에관한법률시행령</span>
+                    <span>(공간정보관리법시행령)</span>
+                </li>
+            </ul>
+        </li>
+        <li>ㄴ
+            <ul>
+                <li>농지법</li>
             </ul>
         </li>
         <li>ㄷ
@@ -37,6 +50,11 @@
                 <li>민사소송법</li>
             </ul>
         </li>
+        <li>ㅂ
+            <ul>
+                <li>부동산등기법</li>
+            </ul>
+        </li>
         <li>ㅅ
             <ul>
                 <li>상법</li>
@@ -47,6 +65,11 @@
         <li>ㅌ
             <ul>
                 <li>특허법</li>
+            </ul>
+        </li>
+        <li>ㅎ
+            <ul>
+                <li>형법</li>
             </ul>
         </li>
     </ul>
@@ -98,7 +121,7 @@
         list-style-type: '';
     }
     .조문-ul>li>ul>li{
-        width: 250px;
+        width: 320px;
         height: 70px;
     }
 
@@ -142,10 +165,11 @@
 
 
     $(`.조문-ul>li>ul>li`).each(function(){
-        const t_=$(this).text();
-        const t=t_.replace(/\(.*\)/,"");
+        const t=$(this).text();
+        const t_=t.replace(/\(.*\)/,"");
+        const t__=t_.trim();
         console.log(t);
-        $(this).wrapInner(`<a href="https://www.law.go.kr/%EB%B2%95%EB%A0%B9/${t}"></a>`)
+        $(this).wrapInner(`<a href="https://www.law.go.kr/법령/${t__}"></a>`)
     })
 
 

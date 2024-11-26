@@ -1,0 +1,6 @@
+*{box-sizing: border-box;}
+[class^='inline-flex']{display: inline-flex;}
+[class^='inline-flex-column']{flex-direction: column;}
+
+
+

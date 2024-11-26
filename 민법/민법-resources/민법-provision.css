@@ -22,8 +22,9 @@ details .issue-provision{
     grid-template-columns: auto 1fr; 
     column-gap: 40px;
 }
-.template>ul:nth-child(2n-1),
-.template>div>ul:nth-child(2n-1),
+.template>ul:nth-child(1),
+/* .template>div>ul:nth-child(1), */
+.template>div:nth-child(1),
 .provision-template>ul:nth-child(2n-1),
 .provision-template>div>ul:nth-child(2n-1)
 {

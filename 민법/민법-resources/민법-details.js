@@ -1,15 +1,12 @@
-$(`head`).append(`<link rel="stylesheet" href="민법-resources/민법-details.css">`);
+$(`head`).append(`
+    <link rel="stylesheet" href="민법-resources/민법-details.css">
+    <link rel="stylesheet" href="민법-resources/민법-details-color.css">
+`);
 
-// $(`details:not(:has(summary:contains('🔤')))`).prop("open", true);
-$(`details`).prop("open", true);
 
 
-
-function details_fontsize(){
-    $(`details>summary`).each(function(){
-        $(this).text() =='🔤'||'🧊' ? $(this).parent().addClass(`detail-word`) : ``;
-    })
-}
-details_fontsize();
+$(`body`).append(`
+    <script src="민법-resources/민법-details-function.js"></script>
+`);
 
 

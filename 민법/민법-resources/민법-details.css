@@ -5,11 +5,16 @@ details{
     border-radius: 10px;
     padding: 10px;
 
+
+    
 }
 details>summary{
     cursor: pointer;
     padding: 10px;
     border-radius: 10px;
+
+
+    white-space: nowrap;
 }
 details>summary:hover{
     background-color: rgba(255, 255, 255, 0.1);
@@ -18,24 +23,6 @@ details>summary:hover{
 }
 
 
-details .r{ color:crimson; }
-    details .o{ color:orangered; }
-details .b{ color:cornflowerblue }
-details .g{color:mediumseagreen;}
-details  a{color:white; text-decoration: none;}
-
-details .purple{color: mediumorchid;}
-
-
-details .c9-1{color:crimson;}
-details .c9-2{color:orangered;}
-details .c9-3{color:orange;}
-details .c9-4{color:mediumseagreen;}
-details .c9-5{color:skyblue;}
-details .c9-6{color:cornflowerblue;}
-details .c9-7{color:mediumorchid;}
-details .c9-8{color:magenta;}
-details .c9-9{color:deeppink;}
 
 
 
@@ -55,5 +42,6 @@ details .ul-focus{
 details h6{ margin-bottom: 0;}
 
 
-.detail-word{font-size: 14px;}
+.details-word   {font-size: 14px;}
+.details-word-12{font-size: 12px;}
 
