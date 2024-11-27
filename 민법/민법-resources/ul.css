@@ -96,3 +96,7 @@
 
 
 
+.ul-wrap{
+    display: inline-grid; 
+    white-space: nowrap;
+}

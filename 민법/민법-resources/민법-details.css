@@ -13,8 +13,8 @@ details>summary{
     padding: 10px;
     border-radius: 10px;
 
-
     white-space: nowrap;
+    
 }
 details>summary:hover{
     background-color: rgba(255, 255, 255, 0.1);
@@ -45,3 +45,9 @@ details h6{ margin-bottom: 0;}
 .details-word   {font-size: 14px;}
 .details-word-12{font-size: 12px;}
 
+
+
+.details-wrap{
+    display: inline-grid;
+    height: min-content;
+}
