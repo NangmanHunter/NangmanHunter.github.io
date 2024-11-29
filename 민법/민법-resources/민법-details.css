@@ -51,3 +51,8 @@ details h6{ margin-bottom: 0;}
     display: inline-grid;
     height: min-content;
 }
+.details-wrap ul{
+    white-space: nowrap;
+}
+
+

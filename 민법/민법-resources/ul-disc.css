@@ -1,0 +1,6 @@
+[class*='disc'],
+.disc{ list-style-type: disc; }
+.disc-child ul{ list-style-type: disc; }
+
+
+

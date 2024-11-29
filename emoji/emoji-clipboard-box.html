@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📌Emoji v.16</title>
+
+    <link rel="stylesheet" href="../resources/uds.css">
+    <link rel="stylesheet" href="emoji-ref.css">
+
+
+</head>
+
+<body>
+
+
+    <div class="clipboard-box">
+        <button class="clipboard-reset">🔄Reset</button>
+        <div style="position: relative;">
+            <div class="clipboard-box-emoji" contenteditable="true"></div>
+        </div>
+        <button class="clipboard-copy">🗂️Copy</button>
+        
+    </div>
+    
+
+
+
+
+
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"></script>
+    <script src="../resources/udf.js"></script>
+    <script src="../resources/udc.js"></script>
+    <script src="emoji-form.js"></script>
+    <script src="emoji-clipboard.js"></script>
+    <script src="emoji-clipboard-box.js"></script>
+
+</body>
+
+</html>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .emoji-ul {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        font-weight: bold;
+        padding: 30px 0 30px 40px;
+
+        white-space: nowrap;
+        margin: 0;
+    }
+
+
+    .emoji-ul>li>ul>li>span {
+        width: 150px;
+        display: inline-block;
+    }
+
+
+    .code {
+        border-radius: 10px;
+
+        list-style-type: '';
+        display: inline-grid;
+        grid-template-columns: repeat(10, auto);
+        grid-auto-columns: min-content;
+    }
+
+    :root {
+        --a: 80px;
+    }
+
+    .code>li {
+        cursor: pointer;
+        width: var(--a);
+        height: var(--a);
+        background-color: transparent;
+        font-size: 35px;
+        font-weight: normal;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        box-shadow: 0px 0px 5px white;
+        filter: drop-shadow(0px 0px 5px white);
+        color: white;
+    }
+
+
+    .code>li:hover {
+        transform: rotate(360deg) scale(1.3);
+        transition-duration: 0.2s;
+        border-radius: 100%;
+
+        color: black;
+        background-color: white;
+        filter: drop-shadow(0px 0px 5px black);
+    }
+
+
+
+
+    .clipboard-box{
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: 3px 3px 3px black;
+        position: fixed;
+        top:0;
+        right: 0;
+        z-index: 1;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .clipboard-box button{
+        cursor: pointer;
+    }
+    .clipboard-box-emoji{
+        max-width: 110px;
+
+        text-shadow: 3px 3px 3px black;
+        border: 10px inset black;
+        padding: 10px;
+    }
+    .clipboard-box-emoji:focus{
+        outline: none;
+    }
+
+
+
+</style>
+<script>
+    $(`.emoji-ref`).load(`emoji-ref.html`);
+
+
+
+
+
+
+</script>
+

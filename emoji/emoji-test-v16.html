@@ -7,6 +7,7 @@
     <title>📌Emoji v.16</title>
 
     <link rel="stylesheet" href="../resources/uds.css">
+    <link rel="stylesheet" href="emoji-ref.css">
 
 
 </head>
@@ -14,6 +15,8 @@
 <body>
 
     <h1 class="title">📌Emoji v.16</h1>
+
+    <div class="emoji-clipboard-box"></div>
 
     
 
@@ -6054,70 +6057,10 @@
     </ul>
 
 
+    <!-- <div class="emoji-ref"></div> -->
 
-    <div class="rf-a-box">
-        <ul class="rf-a">
-            <li>Recommended Emoji ZWJ Sequences, v16.0</li>
-            <li>https://www.unicode.org/emoji/charts/emoji-zwj-sequences.html</li>
-            <li>emoji sequences</li>
-            <li>https://www.unicode.org/Public/emoji/latest/emoji-sequences.txt</li>
-            <li>emoji zwj sequences</li>
-            <li>https://www.unicode.org/Public/emoji/latest/emoji-zwj-sequences.txt</li>
-            <li>emoji test</li>
-            <li>https://www.unicode.org/Public/emoji/latest/emoji-test.txt</li>
-            <li>emoji latest</li>
-            <li>https://www.unicode.org/Public/emoji/latest/</li>
-            <li>emoji v16.0</li>
-            <li>https://www.unicode.org/Public/emoji/16.0/</li>
-            <li>emoji directory</li>
-            <li>https://www.unicode.org/Public/emoji/</li>
-            <li>public</li>
-            <li>https://www.unicode.org/Public/</li>
-            <li>unicode</li>
-            <li>https://www.unicode.org/</li>
+
     
-            <li>이모지 개발자(복세편살)</li>
-            <li>https://americanopeople.tistory.com/451</li>
-            <li>이모지 링크모음</li>
-            <li>https://thermidor.tistory.com/1608</li>
-        </ul>
-
-        <ul class="rf-a">
-            <li>&amp;#x(Html Unicode)</li>
-            <li>https://23log.tistory.com/81</li>
-            <li>Hex &amp;#x(W3School)</li>
-            <li>https://www.w3schools.com/charsets/ref_utf_misc_symbols.asp</li>
-            <li>ref_emoji(W3School)</li>
-            <li>https://www.w3schools.com/charsets/ref_emoji.asp</li>
-            <li>Icons(HTML-CSS-JS)</li>
-            <li>https://html-css-js.com/html/character-codes/icons/</li>
-            <li>Unicode-Tables</b>(timwhitlock)</li>
-            <li>https://apps.timwhitlock.info/emoji/tables/unicode</li>
-            <li>Emojis(Emojiall)</li>
-            <li>https://www.emojiall.com/ko/all-emojis</li>
-            <li>틀:이모지 (유니코드 블록)(Wiki)</li>
-            <li>https://ko.wikipedia.org/wiki/%ED%8B%80:%EC%9D%B4%EB%AA%A8%EC%A7%80_(%EC%9C%A0%EB%8B%88%EC%BD%94%EB%93%9C_%EB%B8%94%EB%A1%9D)
-            </li>
-            <li>emojis Template(Wiki)</li>
-            <li>https://en.wikipedia.org/wiki/Template:Unicode_chart_single_emojis</li>
-            <li>Unicode 2000~2FFF(Wiki)</li>
-            <li>https://ko.wikipedia.org/wiki/%EC%9C%A0%EB%8B%88%EC%BD%94%EB%93%9C_2000~2FFF</li>
-            <li>Unicode 1F000~1FFFF(Wiki)</li>
-            <li>https://ko.wikipedia.org/wiki/%EC%9C%A0%EB%8B%88%EC%BD%94%EB%93%9C_1F000~1FFFF</li>
-            <li>이모지(Wiki)</li>
-            <li>https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%AA%A8%EC%A7%80</li>
-            <li>List of emojis(Wiki)</li>
-            <li>https://en.wikipedia.org/wiki/List_of_emojis</li>
-            <li>Unicode List(Wiki)</li>
-            <li>https://ko.wikipedia.org/wiki/%EB%B6%84%EB%A5%98:%EC%9C%A0%EB%8B%88%EC%BD%94%EB%93%9C_%EB%AA%A9%EB%A1%9D
-            </li>
-            <li>Unicode Characters(Unicode)</li>
-            <li>https://aac.unicode.org/choosing</li>
-        </ul>
-    
-    </div>
-
-
 
 
 
@@ -6125,6 +6068,11 @@
     <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"></script>
     <script src="../resources/udf.js"></script>
     <script src="../resources/udc.js"></script>
+
+    <script src="emoji-test-v16-run.js"></script>
+    
+    
+
 
 
 </body>
@@ -6202,44 +6150,10 @@
         filter: drop-shadow(0px 0px 5px black);
     }
 
-    .rf-a-box{
-
-        background-color: rgba(0, 0, 0, 0.05);
-        display: flex;
-        justify-content: space-between;
-    }
-    .rf-a{
-        padding: 10px 0 10px 40px;
-        margin:0;
-        font-size: 10px;
-    }
-
 
 
 
 </style>
-
 <script>
-
-
-    $(`.emoji-ul>li>ul>li>ul`).addClass(`code`);
-    $(`.emoji-ul>li>ul>li`).each(function () {
-
-        const f = $(this)
-            .contents()
-            .filter(function () { return this.nodeType === 3; })
-            .first();
-        const t = f.text();
-        f.replaceWith(`<span>${t}</span> `);
-
-    })
-
-    $(`.code>li`).each(function () {
-        const m_ = $(this).text().trim().replaceAll(` `, `;&#x`);
-        const m = `&#x${m_};`;
-        $(this).html(m);
-    })
-
-
 </script>
-<script src="emoji-clipboard.js"></script>
+

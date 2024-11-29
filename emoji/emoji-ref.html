@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📌Emoji v.16</title>
+
+    <link rel="stylesheet" href="../resources/uds.css">
+    <link rel="stylesheet" href="emoji-ref.css">
+
+
+</head>
+
+<body>
+
+
+    <div class="rf-a-box">
+        <ul class="rf-a">
+            <li>Recommended Emoji ZWJ Sequences, v16.0</li>
+            <li>https://www.unicode.org/emoji/charts/emoji-zwj-sequences.html</li>
+            <li>emoji sequences</li>
+            <li>https://www.unicode.org/Public/emoji/latest/emoji-sequences.txt</li>
+            <li>emoji zwj sequences</li>
+            <li>https://www.unicode.org/Public/emoji/latest/emoji-zwj-sequences.txt</li>
+            <li>emoji test</li>
+            <li>https://www.unicode.org/Public/emoji/latest/emoji-test.txt</li>
+            <li>emoji latest</li>
+            <li>https://www.unicode.org/Public/emoji/latest/</li>
+            <li>emoji v16.0</li>
+            <li>https://www.unicode.org/Public/emoji/16.0/</li>
+            <li>emoji directory</li>
+            <li>https://www.unicode.org/Public/emoji/</li>
+            <li>public</li>
+            <li>https://www.unicode.org/Public/</li>
+            <li>unicode</li>
+            <li>https://www.unicode.org/</li>
+    
+            <li>이모지 개발자(복세편살)</li>
+            <li>https://americanopeople.tistory.com/451</li>
+            <li>이모지 링크모음</li>
+            <li>https://thermidor.tistory.com/1608</li>
+        </ul>
+
+
+
+        <ul class="rf-a">
+            <li>&amp;#x(Html Unicode)</li>
+            <li>https://23log.tistory.com/81</li>
+            <li>Hex &amp;#x(W3School)</li>
+            <li>https://www.w3schools.com/charsets/ref_utf_misc_symbols.asp</li>
+            <li>ref_emoji(W3School)</li>
+            <li>https://www.w3schools.com/charsets/ref_emoji.asp</li>
+            <li>Icons(HTML-CSS-JS)</li>
+            <li>https://html-css-js.com/html/character-codes/icons/</li>
+            <li>Unicode-Tables</b>(timwhitlock)</li>
+            <li>https://apps.timwhitlock.info/emoji/tables/unicode</li>
+            <li>Emojis(Emojiall)</li>
+            <li>https://www.emojiall.com/ko/all-emojis</li>
+            <li>틀:이모지 (유니코드 블록)(Wiki)</li>
+            <li>https://ko.wikipedia.org/wiki/%ED%8B%80:%EC%9D%B4%EB%AA%A8%EC%A7%80_(%EC%9C%A0%EB%8B%88%EC%BD%94%EB%93%9C_%EB%B8%94%EB%A1%9D)
+            </li>
+            <li>emojis Template(Wiki)</li>
+            <li>https://en.wikipedia.org/wiki/Template:Unicode_chart_single_emojis</li>
+            <li>Unicode 2000~2FFF(Wiki)</li>
+            <li>https://ko.wikipedia.org/wiki/%EC%9C%A0%EB%8B%88%EC%BD%94%EB%93%9C_2000~2FFF</li>
+            <li>Unicode 1F000~1FFFF(Wiki)</li>
+            <li>https://ko.wikipedia.org/wiki/%EC%9C%A0%EB%8B%88%EC%BD%94%EB%93%9C_1F000~1FFFF</li>
+            <li>이모지(Wiki)</li>
+            <li>https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%AA%A8%EC%A7%80</li>
+            <li>List of emojis(Wiki)</li>
+            <li>https://en.wikipedia.org/wiki/List_of_emojis</li>
+            <li>Unicode List(Wiki)</li>
+            <li>https://ko.wikipedia.org/wiki/%EB%B6%84%EB%A5%98:%EC%9C%A0%EB%8B%88%EC%BD%94%EB%93%9C_%EB%AA%A9%EB%A1%9D
+            </li>
+            <li>Unicode Characters(Unicode)</li>
+            <li>https://aac.unicode.org/choosing</li>
+        </ul>
+
+        
+
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"></script>
+    <script src="../resources/udf.js"></script>
+    <script src="../resources/udc.js"></script>
+    <script src="emoji-form.js"></script>
+    <script src="emoji-clipboard.js"></script>
+
+</body>
+
+</html>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .emoji-ul {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        font-weight: bold;
+        padding: 30px 0 30px 40px;
+
+        white-space: nowrap;
+        margin: 0;
+    }
+
+
+    .emoji-ul>li>ul>li>span {
+        width: 150px;
+        display: inline-block;
+    }
+
+
+    .code {
+        border-radius: 10px;
+
+        list-style-type: '';
+        display: inline-grid;
+        grid-template-columns: repeat(10, auto);
+        grid-auto-columns: min-content;
+    }
+
+    :root {
+        --a: 80px;
+    }
+
+    .code>li {
+        cursor: pointer;
+        width: var(--a);
+        height: var(--a);
+        background-color: transparent;
+        font-size: 35px;
+        font-weight: normal;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        box-shadow: 0px 0px 5px white;
+        filter: drop-shadow(0px 0px 5px white);
+        color: white;
+    }
+
+
+    .code>li:hover {
+        transform: rotate(360deg) scale(1.3);
+        transition-duration: 0.2s;
+        border-radius: 100%;
+
+        color: black;
+        background-color: white;
+        filter: drop-shadow(0px 0px 5px black);
+    }
+
+
+
+
+
+</style>
+
+

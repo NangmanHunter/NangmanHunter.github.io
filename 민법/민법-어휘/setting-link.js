@@ -10,5 +10,7 @@ $(`head`).append(`
     <link rel="stylesheet" href="../민법-resources/div-inline-flex.css">
     <link rel="stylesheet" href="../민법-resources/pre.css">
     <link rel="stylesheet" href="../민법-resources/summary.css">
+    <link rel="stylesheet" href="../민법-resources/ul.css">
     <link rel="stylesheet" href="../민법-resources/ul-level.css">
+    <link rel="stylesheet" href="../민법-resources/ul-disc.css">
 `);

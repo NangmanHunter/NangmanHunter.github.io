@@ -1,0 +1,12 @@
+
+.rf-a-box{
+
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+}
+.rf-a{
+    padding: 10px 0 10px 40px;
+    margin:0;
+    font-size: 10px;
+}

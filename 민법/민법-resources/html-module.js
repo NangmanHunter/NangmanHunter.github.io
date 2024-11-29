@@ -4,7 +4,9 @@ $(`.html-module`).each(function(){
     const f = window.location.pathname.split('/').pop();
     const f_  = decodeURIComponent(f);
     const f__  = f_.replace(`.html`,"");
-    $(`.${n}`).load(`${f__}-${n}.html ${t}`, function(){
+
+
+    $(this).load(`${f__}-${n}.html ${t}`, function(){
 
         details_open();
         details_fontsize();
