@@ -1,4 +1,3 @@
-$(`head`).append(`<link rel="stylesheet" href="민법-resources/a.css">`)
 
 $(`.a-casenote`).each(function(){
     const a=$(this).text();

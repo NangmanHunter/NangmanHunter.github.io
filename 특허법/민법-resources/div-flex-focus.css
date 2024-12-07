@@ -1,0 +1,10 @@
+
+[class^="flex-"][class$="-focus"]>:nth-child(1){     
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+[class^="flex-"][class$="-focus"]>div:nth-child(1){ padding: 10px;}
+[class^="flex-"][class$="-focus"]>ul:nth-child(1) { padding: 10px 10px 10px 40px;}
+
+
+

@@ -1,0 +1,37 @@
+.btn-box{
+    display: flex;
+    position: sticky;
+    top:0;
+
+    justify-content: center;
+}
+
+.btn{
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+
+    font-family: inherit;
+
+    display: flex;
+    justify-content: center;
+
+    cursor: pointer;
+}
+.btn:hover{
+    filter: invert(1);
+}
+
+
+.pointer      {cursor: pointer;}                    /* horizontalㆍvetical */
+.detail-divide{list-style-type: ''; display: none;} /* detail */
+.hor-ul       { display: flex; column-gap: 40px;}
+
+
+
+.scroll-low{ filter: opacity(0.1);}

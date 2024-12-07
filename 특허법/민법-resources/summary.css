@@ -1,0 +1,16 @@
+[class*='h6']{
+    font-size: 0.67em;
+    font-weight: bold;
+}
+[class*='h6-0']{
+    padding: 0;
+}
+
+[class*='h5']{
+    font-size: 0.83em;
+    font-weight: bold;
+}
+[class*='h5-0']{
+    padding: 0;
+}
+

@@ -1,0 +1,42 @@
+:root{ --a-layer:40px; }
+.ul-layer-margin{ list-style-type: decimal;}
+.ul-layer-margin>li:nth-of-type(2) { margin-left: calc(var(--a-layer)*1); }
+.ul-layer-margin>li:nth-of-type(3) { margin-left: calc(var(--a-layer)*2); }
+.ul-layer-margin>li:nth-of-type(4) { margin-left: calc(var(--a-layer)*3); }
+.ul-layer-margin>li:nth-of-type(5) { margin-left: calc(var(--a-layer)*4); }
+.ul-layer-margin>li:nth-of-type(6) { margin-left: calc(var(--a-layer)*5); }
+.ul-layer-margin>li:nth-of-type(7) { margin-left: calc(var(--a-layer)*6); }
+.ul-layer-margin>li:nth-of-type(8) { margin-left: calc(var(--a-layer)*7); }
+.ul-layer-margin>li:nth-of-type(9) { margin-left: calc(var(--a-layer)*8); }
+.ul-layer-margin>li:nth-of-type(10){ margin-left: calc(var(--a-layer)*9); }
+
+
+
+
+[class*='ul-level']{
+    display: inline-grid;
+    height: min-content;
+}
+
+
+
+.ul-level>:nth-child(2) { margin-left: calc(var(--a-layer)*1); }
+.ul-level>:nth-child(3) { margin-left: calc(var(--a-layer)*2); }
+.ul-level>:nth-child(4) { margin-left: calc(var(--a-layer)*3); }
+.ul-level>:nth-child(5) { margin-left: calc(var(--a-layer)*4); }
+.ul-level>:nth-child(6) { margin-left: calc(var(--a-layer)*5); }
+.ul-level>:nth-child(7) { margin-left: calc(var(--a-layer)*6); }
+.ul-level>:nth-child(8) { margin-left: calc(var(--a-layer)*7); }
+.ul-level>:nth-child(9) { margin-left: calc(var(--a-layer)*8); }
+.ul-level>:nth-child(10){ margin-left: calc(var(--a-layer)*9); }
+
+.ul-level-reverse>:nth-last-child(2) { margin-left: calc(var(--a-layer)*1); }
+.ul-level-reverse>:nth-last-child(3) { margin-left: calc(var(--a-layer)*2); }
+.ul-level-reverse>:nth-last-child(4) { margin-left: calc(var(--a-layer)*3); }
+.ul-level-reverse>:nth-last-child(5) { margin-left: calc(var(--a-layer)*4); }
+.ul-level-reverse>:nth-last-child(6) { margin-left: calc(var(--a-layer)*5); }
+.ul-level-reverse>:nth-last-child(7) { margin-left: calc(var(--a-layer)*6); }
+.ul-level-reverse>:nth-last-child(8) { margin-left: calc(var(--a-layer)*7); }
+.ul-level-reverse>:nth-last-child(9) { margin-left: calc(var(--a-layer)*8); }
+.ul-level-reverse>:nth-last-child(10){ margin-left: calc(var(--a-layer)*9); }
+

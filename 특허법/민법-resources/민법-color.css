@@ -1,0 +1,31 @@
+.r{color:red;}
+    .o{color:orange;}
+.b{color:blue;}
+.g{color:green;}
+.w{background-color: black; color: white;}
+
+
+
+.c9-1{color:red;}
+.c9-2{color:orange;}
+.c9-3{color:yellow;}
+.c9-4{color:mediumseagreen;}
+.c9-5{color:skyblue;}
+.c9-6{color:cornflowerblue;}
+.c9-7{color:blueviolet;}
+.c9-8{color:magenta;}
+.c9-9{color:deeppink;}
+
+
+.word{color: lightseagreen;}
+
+.b-title{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    padding: 0 7px;
+    border-radius: 7px;
+}
+
+
+
+.h{visibility: hidden;}

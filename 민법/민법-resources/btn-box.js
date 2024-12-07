@@ -1,4 +1,4 @@
-$(`head`).append(`<link rel="stylesheet" href="민법-resources/btn-box.css">`)
+
 $(`.btn-box`).append(`
         <button class="btn detail-fold-spread" >●</button>
         <button class="btn horizontal-vertical">+</button>
