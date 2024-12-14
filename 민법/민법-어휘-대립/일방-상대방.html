@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <details class="details details-wrap">
+
+
+        <div class="div-13">
+            <ul>
+                
+            </ul>
+            <ul>
+                
+            </ul>
+        </div>
+
+
+
+    </details>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"></script>
+    <script src="../민법-어휘/setting-link.js"></script>
+    <script src="../민법-어휘/setting-script.js"></script>
+    <script src="대립-form.js"></script>
+
+
+    
+</body>
+</html>
+
+<script>
+    
+    $(`[class^='대립']`).addClass(`inline-block`);
+    $(`[class^='대립']`).each(function(){
+        const t=$(this).attr(`class`);
+        const t_=t.replace(/\s(.*)/,"");
+        const t__=t_.replace(/^대립-*/,"");
+
+        console.log(t__);
+
+        $(this).load(`무효-취소.html .details`);
+        // $(this).load(`${t__}.html .details`);
+    })
+
+</script>
