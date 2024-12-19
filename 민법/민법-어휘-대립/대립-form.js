@@ -19,7 +19,7 @@ function 대립_form(){
 
 
         d.addClass(`details-wrap`);
-        d.prepend(`<summary class="h6-0">${w}</summary>`);
+        d.prepend(`<summary class="h5-0">${w}</summary>`);
 
         u.prepend(`<li>${g[0]}</li>`);
         u_.prepend(`<li>${g[1]}</li>`);

@@ -73,6 +73,7 @@
             <script src="${s_}/민법-details-어휘.js"></script>
             <script src="${s_}/민법-details-대립.js"></script>
             <script src="${s_}/민법-details-크기.js"></script>
+            <script src="${s_}/민법-details-포함.js"></script>
             
             <script src="${s_}/민법-details-open.js"></script>
             <script src="${s_}/민법-details-font-size.js"></script>

@@ -35,19 +35,3 @@
     
 </body>
 </html>
-
-<script>
-    
-    $(`[class^='대립']`).addClass(`inline-block`);
-    $(`[class^='대립']`).each(function(){
-        const t=$(this).attr(`class`);
-        const t_=t.replace(/\s(.*)/,"");
-        const t__=t_.replace(/^대립-*/,"");
-
-        console.log(t__);
-
-        $(this).load(`무효-취소.html .details`);
-        // $(this).load(`${t__}.html .details`);
-    })
-
-</script>

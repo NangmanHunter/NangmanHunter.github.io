@@ -69,3 +69,9 @@ details .details-word-12{font-size: 12px;}
 .details-wrap>summary>ul{ display: inline-grid; }
 
 
+details s{
+
+    text-decoration-color: rgba(255, 0, 0, 0.5);
+    text-decoration-thickness: 3px;
+
+}

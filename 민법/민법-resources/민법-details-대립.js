@@ -12,25 +12,33 @@ function 대립_form(){
         const c  =$(this).attr("class");
         const c_ =c.replace(/\s(.*)/,"");
         const c__=c_.replace(/^대립-*/,"");
-        const c___=c__.replace(`-`,`🥊`);
+        const c___=c__.replaceAll(`-`,`🥊`);
+        const g   =c__.split(`-`);
         const w  =c___;
 
 
         d.addClass(`details-wrap`);
-        d.prepend(`<summary class="h6-0">${w}</summary>`);
+        d.prepend(`<summary class="h5-0">${w}</summary>`);
+
+        u.prepend(`<li>${g[0]}</li>`);
+        u_.prepend(`<li>${g[1]}</li>`);
+        u__.prepend(`<li>${g[2]}</li>`);
+
 
         u_.before(`<ul></ul>`);
         u__.before(`<ul></ul>`);
 
         const ul_=u_.prev();
-        for(let i=0; i<l.length; i++){
+        for(let i=0; i<l.length+1; i++){
             ul_.append(`<li>🥊</li>`);
         }
         const ul__=u__.prev();
-        for(let i=0; i<l.length; i++){
+        for(let i=0; i<l.length+1; i++){
             ul__.append(`<li>🥊</li>`);
         }
     
+
+        
     })
 
 }

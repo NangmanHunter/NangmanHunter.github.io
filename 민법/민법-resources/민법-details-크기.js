@@ -12,7 +12,7 @@ function 크기_form(){
 
 
         d.addClass(`details-wrap`);
-        d.prepend(`<summary class="h6-0">${w}</summary>`);
+        d.prepend(`<summary class="h5-0">${w}</summary>`);
 
     
     })

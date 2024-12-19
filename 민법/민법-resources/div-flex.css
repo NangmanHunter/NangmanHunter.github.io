@@ -19,3 +19,6 @@
 [class^='flex-91']  >:nth-child(2){ flex: 0 1 10%;}
 
 
+[class^='flex-']>div:nth-child(1)>ul:nth-child(1){ white-space: nowrap;}
+
+
