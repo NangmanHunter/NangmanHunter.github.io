@@ -15,6 +15,21 @@ $(`.html-module`).each(function(){
         div_level();
     });
 
+
+
+    $(this).load(`${f__}${n}.html ${t}`, function(){
+
+        details_open();
+        details_fontsize();
+
+
+        div_level();
+    });
+
+
+
+
+
 })
 
 
