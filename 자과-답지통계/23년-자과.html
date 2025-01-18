@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="_res/darkmode.css">
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+    
+    <pre class="div-inn">
+        54321
+        54323
+
+        24554
+        35214
+
+        14345
+        12522
+
+        44522
+        33143
+    </pre>
+    <div class="div"></div>
+    <pre class="div-out"></pre>
+
+
+
+</body>
+</html>
+<script>
+    $(`.div`).each(function(){
+
+        
+    })
+    //전역변수
+    //오류나나봄.
+    //나중에보완ㄱㄱ.
+</script>
+<script>
+
+    const t_=$(`.div-inn`).text().trim().replaceAll(/\s/g,``);
+    $(`.div`).text(`${t_}`);
+
+    const t=$(`.div`).text();
+    var s1=t.substring(0,10);
+    var s2=t.substring(10,20);
+    var s3=t.substring(20,30);
+    var s4=t.substring(30,40);
+
+    let c1= (t.match(/1/g) || []).length;
+    let c2= (t.match(/2/g) || []).length;
+    let c3= (t.match(/3/g) || []).length;
+    let c4= (t.match(/4/g) || []).length;
+    let c5= (t.match(/5/g) || []).length;
+
+    
+    $(`.div-out`).append(`
+전체통계
+1번▶${c1}
+2번▶${c2}
+3번▶${c3}
+4번▶${c4}
+5번▶${c5}
+    `)
+
+
+    //window[`s1`]
+    //const (x)
+    //let   (x)
+    //var   (o)
+
+    const arr=[`물리`,`화학`,`생물`,`지학`]
+    for(let i=0; i<4; i++){
+ 
+        c1= (window[`s${i+1}`].match(/1/g) || []).length;
+        c2= (window[`s${i+1}`].match(/2/g) || []).length;
+        c3= (window[`s${i+1}`].match(/3/g) || []).length;
+        c4= (window[`s${i+1}`].match(/4/g) || []).length;
+        c5= (window[`s${i+1}`].match(/5/g) || []).length;  
+
+        $(`.div-out`).append(`
+${arr[i]}통계
+1번▶${c1}
+2번▶${c2}
+3번▶${c3}
+4번▶${c4}
+5번▶${c5}
+        `)
+
+    }
+
+
+
+
+
+
+
+
+</script>
