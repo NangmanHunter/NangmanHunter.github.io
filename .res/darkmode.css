@@ -26,3 +26,12 @@ s{
 
 u{text-decoration-color: orange;}
 
+
+
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover {
+    filter: opacity(0.3);
+}
