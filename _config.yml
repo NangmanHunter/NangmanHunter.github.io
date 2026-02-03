@@ -1,4 +1,4 @@
-remote_theme: vaibhavvikas/jekyll-theme-minimalistic
+remote_theme: son-link/jekyll-simple-dark
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
