@@ -1,9 +1,7 @@
-remote_theme: liamg/jekyll-theme-abysm
+remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
-
-
 
 
 # theme: minima
