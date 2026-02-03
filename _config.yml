@@ -1,4 +1,4 @@
-title: NangMan
+title: My Site
 description: Moonwalk test
 theme: null
 
@@ -18,4 +18,3 @@ plugins:
 # theme: jekyll-theme-midnight
 # theme: jekyll-theme-chirpy
 
-# remote_theme: abhinavs/moonwalk # ❌다크모드.뭔가안넘어오는듯.
