@@ -6,7 +6,7 @@ remote_theme: abhinavs/moonwalk
 
 plugins:
   - jekyll-remote-theme
-
+  - jekyll-seo-tag
 
 
 # theme: minima
