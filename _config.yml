@@ -1,7 +1,12 @@
-theme: jekyll-theme-chirpy
+title: My Site
+description: Moonwalk test
+theme: null
 
+remote_theme: abhinavs/moonwalk
 
-title: My Jekyll Site
+plugins:
+  - jekyll-remote-theme
+
 
 
 # theme: minima
