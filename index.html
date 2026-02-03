@@ -1,64 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Docs</title>
+    <meta charset="UTF-8">
+    <title>Docs</title>
 
-  <!-- markdown → html 변환기 -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- markdown → html 변환기 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-  <!-- 다크모드 스타일 -->
-  <style>
-    body {
-      background: #0f172a;
-      color: #e5e7eb;
-      font-family: system-ui, -apple-system, sans-serif;
-      padding: 3rem;
-      line-height: 1.7;
-    }
 
-    h1, h2, h3 {
-      border-bottom: 1px solid #334155;
-      padding-bottom: .3em;
-    }
-
-    pre {
-      background: #020617;
-      padding: 1rem;
-      border-radius: 8px;
-      overflow-x: auto;
-    }
-
-    code {
-      color: #38bdf8;
-    }
-
-    a {
-      color: #60a5fa;
-    }
-  </style>
-
-    <!-- <style>
-        html{
+    <style>
+        html {
             color-scheme: dark;
         }
-    </style> -->
+    </style>
 
 
 
 </head>
+
 <body>
 
-  <article id="content">불러오는 중…</article>
-
-  <script>
-    fetch('README.md')
-      .then(res => res.text())
-      .then(md => {
-        document.getElementById('content').innerHTML =
-          marked.parse(md);
-      });
-  </script>
+    <article id="content">불러오는 중…</article>
+    <script>
+        fetch('README.md')
+            .then(res => res.text())
+            .then(md => {
+                document.getElementById('content').innerHTML =
+                    marked.parse(md);
+            });
+    </script>
 
 </body>
+
 </html>

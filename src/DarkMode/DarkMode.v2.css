@@ -1,0 +1,29 @@
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+    font-family: system-ui, -apple-system, sans-serif;
+    padding: 3rem;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+    border-bottom: 1px solid #334155;
+    padding-bottom: .3em;
+}
+
+pre {
+    background: #020617;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+code {
+    color: #38bdf8;
+}
+
+a {
+    color: #60a5fa;
+}
