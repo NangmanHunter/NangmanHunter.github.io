@@ -1,8 +1,3 @@
-<style>
-    html{
-        color-scheme: dark;
-    }
-</style>
 
 
 
