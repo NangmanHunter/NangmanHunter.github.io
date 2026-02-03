@@ -1,9 +1,18 @@
 title: My Jekyll Site
-theme: jekyll-theme-midnight
 
 
-# theme: jekyll-theme-midnight
-# theme: jekyll-theme-slate
+# Moonwalk remote theme 설정
+remote_theme: abhinavs/moonwalk
+plugins:
+  - jekyll-remote-theme
+
+
+
 # theme: minima
 # theme: jekyll-theme-minimal
 # theme:  jekyll-theme-cayman
+# theme: jekyll-theme-slate
+
+# DarkMode
+# theme: jekyll-theme-midnight
+# theme: jekyll-theme-chirpy
