@@ -1,5 +1,9 @@
-title: My Jekyll Site
 remote_theme: abhinavs/moonwalk
+plugins:
+  - jekyll-remote-theme
+
+  
+title: My Jekyll Site
 
 
 # theme: minima
