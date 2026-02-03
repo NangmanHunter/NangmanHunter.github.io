@@ -1,8 +1,9 @@
-remote_theme: abhinavs/moonwalk
+remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache
 
-  
+
 title: My Jekyll Site
 
 
@@ -14,4 +15,5 @@ title: My Jekyll Site
 # DarkMode
 # theme: jekyll-theme-midnight
 # theme: jekyll-theme-chirpy
-# remote_theme: abhinavs/moonwalk
+
+# remote_theme: abhinavs/moonwalk # ❌다크모드.뭔가안넘어오는듯.
