@@ -1,15 +1,15 @@
 title: NangMan
 description: Moonwalk test
-theme: null
 
 remote_theme: abhinavs/moonwalk
 
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
-
+  - jekyll-feed
 
 markdown: kramdown
+
 
 
 
