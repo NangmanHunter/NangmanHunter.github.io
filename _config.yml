@@ -1,7 +1,7 @@
-remote_theme: son-link/jekyll-simple-dark
-plugins:
-  - jekyll-remote-theme
-  - jekyll-seo-tag
+# remote_theme: son-link/jekyll-simple-dark
+# plugins:
+#   - jekyll-remote-theme
+#   - jekyll-seo-tag
 
 
 # theme: minima

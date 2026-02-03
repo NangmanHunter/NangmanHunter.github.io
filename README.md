@@ -1,3 +1,10 @@
+<style>
+    html{
+        color-scheme: dark;
+    }
+</style>
+
+
 
 ## Main
 - [https://nangman.org](https://nangman.org)
