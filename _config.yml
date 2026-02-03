@@ -3,8 +3,8 @@ title: My Jekyll Site
 
 # Moonwalk remote theme 설정
 remote_theme: abhinavs/moonwalk
-plugins:
-  - jekyll-remote-theme
+# plugins:
+#   - jekyll-remote-theme
 
 
 
