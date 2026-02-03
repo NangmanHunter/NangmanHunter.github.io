@@ -1,10 +1,12 @@
-title: My Dark Site
-description: Simple dark theme
-remote_theme: pages-themes/midnight@v0.2.0
+title: Docs Dark
+remote_theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
 
+# 다크모드 토글 켜기
+color_scheme: light dark
+enable_dark_mode: true
 
 
 
