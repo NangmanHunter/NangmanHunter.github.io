@@ -1,2 +1,6 @@
 title: My Jekyll Site
-theme: jekyll-theme-minimal
+theme:  jekyll-theme-cayman
+
+
+# theme: jekyll-theme-minimal
+# theme:  jekyll-theme-cayman
