@@ -1,12 +1,12 @@
-title: Docs Dark
-remote_theme: pmarsceill/just-the-docs
+title: Dark Blog
+remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-feed
 
-# 다크모드 토글 켜기
-color_scheme: light dark
-enable_dark_mode: true
+# 다크 스킨 고정
+minimal_mistakes_skin: dark
 
 
 
