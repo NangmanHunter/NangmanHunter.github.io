@@ -1,13 +1,11 @@
-
-
-
 ## Main
-- [https://nangman.org](https://nangman.org)
+- [Main](https://nangman.org)
 
 
 ## Test
-- [https://test.nangman.org](https://test.nangman.org)
+- [Test](https://test.nangman.org)
 
 
-## Clock
-- [https://clock.nangman.org](https://clock.nangman.org)
+## Project
+- [Clock](https://clock.nangman.org)
+- [JavaScript](https://nangman.org/JavaScript.Project/)
