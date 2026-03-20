@@ -3,8 +3,8 @@ title: Home
 ---
 
 
-<details open>
-    <summary></summary>
+<details>
+    <summary>...</summary>
 
 
 ## Main
@@ -17,5 +17,7 @@ title: Home
 
 
 ## Project
+- [StatisticsCaculator](https://statistics.calculator.nangman.org)
 - [Clock](https://clock.nangman.org)
 - [JavaScript](https://nangman.org/JavaScript.Project/)
+
